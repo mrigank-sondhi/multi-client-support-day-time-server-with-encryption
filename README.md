@@ -2,8 +2,8 @@
 This project implements a secure multi-client support day-time server which allows clients to seek the current day, date and time from the server.
 
 1)Creating OpenSSL certificates:
-	Command Line: $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout <KEYFILENAME>.pem -out <CERTIFICATEFILENAME>.pem
-	Example: $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout certificate.pem -out certificate.pem
+Command Line: $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout <KEYFILENAME>.pem -out <CERTIFICATEFILENAME>.pem
+Example: $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout certificate.pem -out certificate.pem
 	
 2)Compiling server.c:
 	Command Line: $ gcc -Wall -o <OUTPUTFILE> <INPUTFILE>.c -L/usr/lib -lssl -lcrypto
